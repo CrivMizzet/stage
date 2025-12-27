@@ -612,13 +612,17 @@ figure {
 	}
 
 	.wp-block-latest-posts__list {
-		align-items: center;
-	}
+	align-items: center;
+    }
 
-	.hero-inner {
-		padding: 80px 20px;
-		min-height: 320px;
-	}
+    .hero-outer {
+	min-height: 320px;
+    }
+
+    .hero-inner {
+	padding: 80px 20px;
+	min-height: 320px;
+    }
 
 	h1 {
 		font-size: 2.5rem;
