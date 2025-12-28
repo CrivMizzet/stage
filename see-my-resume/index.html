@@ -343,13 +343,13 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 		
 		prevBtn.addEventListener('click', () => {
-			prevSlide();
 			stopAutoplay();
+			prevSlide();
 		});
 		
 		nextBtn.addEventListener('click', () => {
-			nextSlide();
 			stopAutoplay();
+			nextSlide();
 		});
 		
 		pauseBtn.addEventListener('click', () => {
@@ -362,8 +362,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		dots.forEach((dot, index) => {
 			dot.addEventListener('click', () => {
-				showSlide(index);
 				stopAutoplay();
+				showSlide(index);
 			});
 		});
 		

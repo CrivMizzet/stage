@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		function startAutoplay() {
 			autoplayInterval = setInterval(nextSlide, 3000);
 			isPlaying = true;
-			pauseBtn.textContent = '⸫';
+			pauseBtn.textContent = '⏸';
 			pauseBtn.setAttribute('aria-label', 'Pause slideshow');
 		}
 		
@@ -363,13 +363,13 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 		
 		prevBtn.addEventListener('click', () => {
+            stopAutoplay();
 			prevSlide();
-			stopAutoplay();
 		});
 		
 		nextBtn.addEventListener('click', () => {
+            stopAutoplay();
 			nextSlide();
-			stopAutoplay();
 		});
 		
 		pauseBtn.addEventListener('click', () => {
@@ -382,8 +382,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		dots.forEach((dot, index) => {
 			dot.addEventListener('click', () => {
+                stopAutoplay();
 				showSlide(index);
-				stopAutoplay();
 			});
 		});
 		
