@@ -829,12 +829,12 @@ blockquote p {
 	height: 100%;
 	opacity: 1;
 	transition: transform 0.5s ease-in-out;
-	transform: translateX(100%);
 }
 
 .slideshow-slide.active {
 	transform: translateX(0);
 	position: relative;
+	z-index: 1;
 }
 		.slideshow-slide img {
 	width: 100%;
@@ -920,6 +920,10 @@ blockquote p {
 	}
 .slideshow-slide.prev {
 	transform: translateX(-100%);
+}
+
+.slideshow-slide.next {
+	transform: translateX(100%);
 }
 		.slideshow-pause:hover,
 		.slideshow-pause:focus {
