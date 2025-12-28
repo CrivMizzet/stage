@@ -9,6 +9,44 @@
 	<link rel="icon" href="/assets/cropped-forkinroad.jpg" sizes="32x32">
 	<link rel="icon" href="/assets/cropped-forkinroad-192.jpg" sizes="192x192">
 	<link rel="apple-touch-icon" href="/assets/cropped-forkinroad-180.jpg">
+	<style>
+		/* Fix slideshow glitchiness - hide non-active slides initially */
+		.slideshow-slide {
+			opacity: 0;
+			visibility: hidden;
+		}
+		
+		.slideshow-slide.active {
+			opacity: 1;
+			visibility: visible;
+		}
+		
+		/* Ensure figure fills the slide */
+		.slideshow-slide figure {
+			margin: 0;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		/* Style captions with dark overlay box at bottom */
+		.wp-block-jetpack-slideshow_caption.gallery-caption {
+			background-color: rgba(0, 0, 0, 0.5);
+			color: #fff;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 0.75em;
+			margin: 0 !important;
+			text-align: left;
+			font-size: 1rem;
+			z-index: 2;
+		}
+	</style>
 </head>
 
 <body class="wp-singular post-template-default single single-post wp-embed-responsive wp-theme-vivre is-block-theme">
@@ -75,96 +113,142 @@
 					<div class="slideshow-container">
 						<div class="slideshow-wrapper">
 							<div class="slideshow-slide active">
-								<img src="/assets/tampa-aquarium.jpg" alt="Heading to Aquarium">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Heading to Aquarium' Tampa, FL</figcaption>
+								<figure>
+									<img src="/assets/tampa-aquarium.jpg" alt="Heading to Aquarium">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Heading to Aquarium' Tampa, FL</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/hot-air-balloon-1.heif" alt="Hot Air Balloon">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Hot Air Balloon' Woodstock, VA</figcaption>
+								<figure>
+									<img src="/assets/hot-air-balloon-1.heif" alt="Hot Air Balloon">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Hot Air Balloon' Woodstock, VA</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/hot-air-balloon-2.heif" alt="Hot Air Balloon">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Hot Air Balloon' in Woodstock, VA</figcaption>
+								<figure>
+									<img src="/assets/hot-air-balloon-2.heif" alt="Hot Air Balloon">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Hot Air Balloon' in Woodstock, VA</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/luray-caverns.jpg" alt="Family Trip">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Family Trip' Luray Caverns, VA</figcaption>
+								<figure>
+									<img src="/assets/luray-caverns.jpg" alt="Family Trip">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Family Trip' Luray Caverns, VA</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/tree-top-hike.jpg" alt="Tree Top Hike">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Tree Top Hike' Paeonian Springs, VA</figcaption>
+								<figure>
+									<img src="/assets/tree-top-hike.jpg" alt="Tree Top Hike">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Tree Top Hike' Paeonian Springs, VA</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/dc-auto-salon.jpg" alt="DC Auto Salon">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'DC Auto Salon' Washington, DC</figcaption>
+								<figure>
+									<img src="/assets/dc-auto-salon.jpg" alt="DC Auto Salon">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'DC Auto Salon' Washington, DC</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/cherry-blossoms.jpg" alt="Cherry Blossoms">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Cherry Blossoms' Edgemere, MD</figcaption>
+								<figure>
+									<img src="/assets/cherry-blossoms.jpg" alt="Cherry Blossoms">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Cherry Blossoms' Edgemere, MD</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/boating-trip.jpg" alt="Boating Trip">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Boating Trip' Cambridge, MD</figcaption>
+								<figure>
+									<img src="/assets/boating-trip.jpg" alt="Boating Trip">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Boating Trip' Cambridge, MD</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/graffiti-alley.heif" alt="Graffiti Alley">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Graffiti Alley' Baltimore, MD</figcaption>
+								<figure>
+									<img src="/assets/graffiti-alley.heif" alt="Graffiti Alley">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Graffiti Alley' Baltimore, MD</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/medical-museum.jpg" alt="Medical Museum">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Medical Museum' Philadelphia, PA</figcaption>
+								<figure>
+									<img src="/assets/medical-museum.jpg" alt="Medical Museum">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Medical Museum' Philadelphia, PA</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/bar-harbor.heif" alt="Solo Trip Bar Harbor">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Solo Trip' Bar Harbor, ME</figcaption>
+								<figure>
+									<img src="/assets/bar-harbor.heif" alt="Solo Trip Bar Harbor">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Solo Trip' Bar Harbor, ME</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/mount-desert.jpg" alt="Solo Trip Mount Desert">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Solo Trip' Mount Desert, ME</figcaption>
+								<figure>
+									<img src="/assets/mount-desert.jpg" alt="Solo Trip Mount Desert">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Solo Trip' Mount Desert, ME</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/acadia-national-park.jpg" alt="Solo Trip Acadia">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Solo Trip' Acadia National Park, ME</figcaption>
+								<figure>
+									<img src="/assets/acadia-national-park.jpg" alt="Solo Trip Acadia">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">'Solo Trip' Acadia National Park, ME</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/phi-phi-islands.jpg" alt="Phi Phi Islands">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">"The Best Plus One" Phi Phi Islands, Thailand</figcaption>
+								<figure>
+									<img src="/assets/phi-phi-islands.jpg" alt="Phi Phi Islands">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">"The Best Plus One" Phi Phi Islands, Thailand</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/krabi-thailand.heif" alt="Krabi Thailand">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">"The Best Plus One" Krabi, Thailand</figcaption>
+								<figure>
+									<img src="/assets/krabi-thailand.heif" alt="Krabi Thailand">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">"The Best Plus One" Krabi, Thailand</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/chicken-island.heif" alt="Chicken Island">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">"The Best Plus One" Chicken Island, Thailand</figcaption>
+								<figure>
+									<img src="/assets/chicken-island.heif" alt="Chicken Island">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">"The Best Plus One" Chicken Island, Thailand</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/ayutthaya-thailand.heif" alt="Ayutthaya Thailand">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">"The Best Plus One" Ayutthaya, Thailand</figcaption>
+								<figure>
+									<img src="/assets/ayutthaya-thailand.heif" alt="Ayutthaya Thailand">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">"The Best Plus One" Ayutthaya, Thailand</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/japan-mountains.heif" alt="Japan Mountains">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">"The Best Plus One" Japan's Mountains</figcaption>
+								<figure>
+									<img src="/assets/japan-mountains.heif" alt="Japan Mountains">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">"The Best Plus One" Japan's Mountains</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/cyrillic-practice.jpg" alt="Cyrillic Russian Practice">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">Cyrillic Russian Practice</figcaption>
+								<figure>
+									<img src="/assets/cyrillic-practice.jpg" alt="Cyrillic Russian Practice">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">Cyrillic Russian Practice</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/duolingo-2023.jpg" alt="Duolingo 2023">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">Duolingo 2023</figcaption>
+								<figure>
+									<img src="/assets/duolingo-2023.jpg" alt="Duolingo 2023">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">Duolingo 2023</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/duolingo-2025-1.png" alt="Duolingo 2025">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">Duolingo 2025</figcaption>
+								<figure>
+									<img src="/assets/duolingo-2025-1.png" alt="Duolingo 2025">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">Duolingo 2025</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/duolingo-2025-2.jpg" alt="Duolingo 2025">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">Duolingo 2025</figcaption>
+								<figure>
+									<img src="/assets/duolingo-2025-2.jpg" alt="Duolingo 2025">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">Duolingo 2025</figcaption>
+								</figure>
 							</div>
 							<div class="slideshow-slide">
-								<img src="/assets/duolingo-russian-spanish.png" alt="Duolingo Progress">
-								<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">Duolingo Russian &amp; Spanish Nov. 2025</figcaption>
+								<figure>
+									<img src="/assets/duolingo-russian-spanish.png" alt="Duolingo Progress">
+									<figcaption class="wp-block-jetpack-slideshow_caption gallery-caption">Duolingo Russian &amp; Spanish Nov. 2025</figcaption>
+								</figure>
 							</div>
 							<button class="slideshow-nav slideshow-prev" aria-label="Previous slide">‹</button>
 							<button class="slideshow-nav slideshow-next" aria-label="Next slide">›</button>
