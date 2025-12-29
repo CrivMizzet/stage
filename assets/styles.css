@@ -473,7 +473,7 @@ figure {
 }
 
 /* Social Sharing */
-.sharedaddy {
+.emailprint {
 	margin: 2rem 0;
 	padding: 0;
 	justify-content: center;
@@ -645,7 +645,7 @@ figure {
 /* Print Styles */
 @media print {
 	.header-nav,
-	.sharedaddy,
+	.emailprint,
 	.post-navigation-section,
 	.footer-content,
 	.wp-block-audio {
