@@ -867,10 +867,10 @@ blockquote p {
 		background: #fff;
 	}
 		.slideshow-prev {
-		left: 10px;
+		left: 20px;
 	}
 		.slideshow-next {
-		right: 10px;
+		right: 20px;
 	}
 		.slideshow-dots {
 		text-align: center;
